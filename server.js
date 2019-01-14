@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 var data = require("./app/data/friends.js");
 
 
-require("./routing/apiRoutes")(app, data);
-require("./routing/htmlRoutes")(app, path);
+require("./app/routing/apiRoutes")(app, data);
+require("./app/routing/htmlRoutes")(app, path);
 
 
 
