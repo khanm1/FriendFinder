@@ -11,9 +11,7 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-
 var data = require("./app/data/friends.js");
-
 
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
