@@ -1,23 +1,23 @@
 module.exports = [
   {
-      name: "John",
+      name: "Lolo",
       scores: [3, 4, 2, 1, 4, 5, 3, 4, 5, 2],
-      image: "http://www.clker.com/cliparts/r/0/O/0/X/O/image-of-person-sspeck-md.png"
+      image: "https://timedotcom.files.wordpress.com/2015/08/lolo-jones-athlete.jpg?quality=85"
   },
   {
-      name: "Mike",
+      name: "Tom",
       scores: [5, 2, 3, 3, 5, 2, 1, 4, 5, 2],
-      image: "http://ramsis.co.ke/wp-content/uploads/2016/06/person.png"
+      image: "https://akns-images.eonline.com/eol_images/Entire_Site/201711/rs_600x600-170201141543-600.tom-brady.cm.2117.jpg?fit=inside|900:auto&output-quality=90"
   },
   {
-      name: "Jacob",
+      name: "Mia",
       scores: [2, 4, 5, 2, 3, 4, 5, 3, 2, 5],
-      image: "http://www.relevantconnections.net/wp-content/uploads/2018/03/businessman.png"
+      image: "https://m.media-amazon.com/images/M/MV5BMjEyMzQyNzA0M15BMl5BanBnXkFtZTYwODc3MTA1._V1_UX214_CR0,0,214,317_AL_.jpg"
   },
   {
-      name: "Hannah",
+      name: "Rob",
       scores: [4, 3, 4, 1, 4, 5, 2, 1, 2, 3],
-      image: "https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/businesswoman2.png"
+      image: "https://m.media-amazon.com/images/M/MV5BNTc2NDA2NTYyOF5BMl5BanBnXkFtZTcwMzU5OTg5Nw@@._V1_.jpg"
   }
 ]
 
