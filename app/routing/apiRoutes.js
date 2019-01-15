@@ -1,9 +1,11 @@
+//Routes
 module.exports = function(app, data){
-    
+  
+    // API GET Requests
   app.get("/api/friends", function(req, res){
       return res.json(data);
   });
-
+// API POST Requests
   app.post("/api/friends", function(req, res){
       var newFriend = req.body;
       
