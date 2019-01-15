@@ -1,9 +1,9 @@
-// configure our dependencies
+// //set up dependencie
 var path = require("path");
 var bodyParser = require("body-parser");
 var express = require("express");
 
-// setting up the express app
+// creates express server and sets up a port
 var app = express();
 var PORT = process.env.PORT || 3000;
 
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var data = require("./app/data/friends.js");
-
+//Router
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
 
