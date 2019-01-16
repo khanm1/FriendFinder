@@ -17,7 +17,7 @@ var data = require("./app/data/friends.js");
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
 
-// starting the server 
+// Listener
 app.listen(PORT, function(){
     console.log("App listening on PORT" + PORT);
 })
