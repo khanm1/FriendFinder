@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+
 </head>
+
 <body>
     <div class="container">
         <br>
@@ -156,19 +158,20 @@
                 </div>
             </div>
         </div>
-        <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/khanm1/FriendFinder.git" target="_blank">GitHub Repo</a></p>
-        <br>  
+        <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/khanm1/FriendFinder.git"
+                target="_blank">GitHub Repo</a></p>
+        <br>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script>
-        $("#submitButtonId").click(function(){
+        $("#submitButtonId").click(function () {
             event.preventDefault();
             var scoresArr = [];
-            for(var i = 1; i < 11; i++){
+            for (var i = 1; i < 11; i++) {
                 scoresArr.push(parseInt($("#Q" + i).val().trim()));
             }
             var newSubmission = {
@@ -179,40 +182,41 @@
             var currFriendsScores = [];
             var currFriendsNames = [];
             var currFriendsImages = [];
-            
-            $.get("/api/friends", function(data){
-                for(var i = 0; i<data.length; i++){
+
+            $.get("/api/friends", function (data) {
+                for (var i = 0; i < data.length; i++) {
                     currFriendsScores.push(data[i].scores);
                     currFriendsNames.push(data[i].name);
                     currFriendsImages.push(data[i].image);
                 }
             })
-            
-            
-            $.post("/api/friends",newSubmission,function(data){
-                var diffArray = []; 
-                for(var i = 0; i < currFriendsScores.length; i++){
+
+
+            $.post("/api/friends", newSubmission, function (data) {
+                var diffArray = [];
+                for (var i = 0; i < currFriendsScores.length; i++) {
                     var diff = 0;
-                    for(var k = 0; k < currFriendsScores[i].length; k++){
+                    for (var k = 0; k < currFriendsScores[i].length; k++) {
                         diff += Math.abs(currFriendsScores[i][k] - data.scores[k]);
                     }
                     diffArray.push(diff);
                 }
-                
+
                 var smallestDifferenceIn = diffArray.indexOf(Math.min(...diffArray));
                 var match = currFriendsNames[smallestDifferenceIn];
                 var image = currFriendsImages[smallestDifferenceIn];
-                
+
                 $("#myModal").modal("toggle");
                 $("#modalTxt").text("Your Match is: " + match);
                 $("#imageId").attr("src", image);
             });
-            
+
             $("#nameinputId").val("");
-            for(var i = 1; i<11; i++){
+            for (var i = 1; i < 11; i++) {
                 $("#Q" + i).val("");
             }
         })
     </script>
 </body>
+
 </html>
