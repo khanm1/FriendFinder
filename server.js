@@ -1,4 +1,4 @@
-// //set up dependencie
+//set up dependencie
 var path = require("path");
 var bodyParser = require("body-parser");
 var express = require("express");
@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 var data = require("./app/data/friends.js");
+
 //Router
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
