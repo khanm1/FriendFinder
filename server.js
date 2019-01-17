@@ -9,15 +9,18 @@ var PORT = process.env.PORT || 3000;
 
 // setting up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({extended: true}));
+
+// this parse various different custom JSON types as JSN
 app.use(bodyParser.json());
 
 var data = require("./app/data/friends.js");
 
 //Router
+// this is exported as a function an passed in app
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
 
-// Listener
+// Starts the server to begin listening
 app.listen(PORT, function(){
     console.log("App listening on PORT" + PORT);
 })
