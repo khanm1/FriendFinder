@@ -9,14 +9,12 @@ var PORT = process.env.PORT || 3000;
 
 // setting up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({extended: true}));
-
-// this parse various different custom JSON types as JSN
 app.use(bodyParser.json());
 
 var data = require("./app/data/friends.js");
 
 //Router
-// this is exported as a function an passed in app
+// The below points our server to a series of "route" files.
 require("./app/routing/apiRoutes")(app, data);
 require("./app/routing/htmlRoutes")(app, path);
 
