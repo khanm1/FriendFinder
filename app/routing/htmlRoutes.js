@@ -10,4 +10,3 @@ module.exports = function (app, path) {
     })
 }
 
-// If no matching route is found default to home

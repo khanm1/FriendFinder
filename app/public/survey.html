@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
     <div class="container">
         <br>
@@ -21,32 +24,35 @@
                 <input type="text" class="form-control" id="nameinputId">
             </div>
             <div class="form-group">
-                <label for="imageinputId">Enter a link to an image of you profile picture</label>
+                <label for="imageinputId">Enter a link of your profile picture</label>
                 <input type="text" class="form-control" id="imageinputId">
             </div>
             <div class="form-group">
-                <label for="Q1">How comfortable are you in social situations?</label>
+                <h4>Question: 1</h4>
+                <label for="Q1">Do you enjoy trying different type of foods?</label>
                 <select class="form-control" id="Q1">
                     <option value="" selected disabled>Please Select</option>
-                    <option value="1">1 (Uncomfortable)</option>
-                    <option value="2">2 (Somewhat Uncomfortable)</option>
+                    <option value="1">1 (Not Really)</option>
+                    <option value="2">2 (Sometimes)</option>
                     <option value="3">3 (Neutral)</option>
-                    <option value="4">4 (Somewhat Comfortable)</option>
-                    <option value="5">5 (Comfortable)</option>
+                    <option value="4">4 (Sure)</option>
+                    <option value="5">5 (Love It)</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="Q2">How often do you go hiking?</label>
+                <h4>Question: 2</h4>
+                <label for="Q2">Do you prefer outdoor activities more than indoor?</label>
                 <select class="form-control" id="Q2">
                     <option value="" selected disabled>Please Select</option>
-                    <option value="1">1 (Uncomfortable)</option>
-                    <option value="2">2 (Somewhat Uncomfortable)</option>
+                    <option value="1">1 (Don't like Outdoor)</option>
+                    <option value="2">2 (Sometimes)</option>
                     <option value="3">3 (Neutral)</option>
-                    <option value="4">4 (Somewhat Comfortable)</option>
-                    <option value="5">5 (Comfortable)</option>
+                    <option value="4">4 (Sure)</option>
+                    <option value="5">5 (Love It)</option>
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 3</h4>
                 <label for="Q3">How often do you go to the movies?</label>
                 <select class="form-control" id="Q3">
                     <option value="" selected disabled>Please Select</option>
@@ -58,6 +64,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 4</h4>
                 <label for="Q4">How much do you like animals?</label>
                 <select class="form-control" id="Q4">
                     <option value="" selected disabled>Please Select</option>
@@ -69,6 +76,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 5</h4>
                 <label for="Q5">Do you like to watch TV shows?</label>
                 <select class="form-control" id="Q5">
                     <option value="" selected disabled>Please Select</option>
@@ -80,6 +88,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 6</h4>
                 <label for="Q6">How much do you like to dance?</label>
                 <select class="form-control" id="Q6">
                     <option value="" selected disabled>Please Select</option>
@@ -91,6 +100,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 7</h4>
                 <label for="Q7">How often do you go camping?</label>
                 <select class="form-control" id="Q7">
                     <option value="" selected disabled>Please Select</option>
@@ -102,6 +112,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 8</h4>
                 <label for="Q8">How religious are you?</label>
                 <select class="form-control" id="Q8">
                     <option value="" selected disabled>Please Select</option>
@@ -113,6 +124,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 9</h4>
                 <label for="Q9">How do you feel about spiders?</label>
                 <select class="form-control" id="Q9">
                     <option value="" selected disabled>Please Select</option>
@@ -124,6 +136,7 @@
                 </select>
             </div>
             <div class="form-group">
+                <h4>Question: 10</h4>
                 <label for="Q10">How do you feel about romantic dates?</label>
                 <select class="form-control" id="Q10">
                     <option value="" selected disabled>Please Select</option>
@@ -136,7 +149,7 @@
             </div>
         </form>
         <br><br>
-        <a id="submitButtonId" class="btn-lg btn-block btn-primary text-white text-center">Submit</a>
+        <a id="submitButtonId" class="btn-lg btn-block btn-primary text-white text-center">Submit Survey</a>
         <br><br>
         <div class="modal" id="myModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -156,8 +169,9 @@
                 </div>
             </div>
         </div>
-        <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/khanm1/FriendFinder.git" target="_blank">GitHub Repo</a></p>
-        <br>  
+        <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/khanm1/FriendFinder.git"
+                target="_blank">GitHub Repo</a></p>
+        <br>
     </div>
 
 
@@ -165,10 +179,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
-        $("#submitButtonId").click(function(){
+        $("#submitButtonId").click(function () {
             event.preventDefault();
             var scoresArr = [];
-            for(var i = 1; i < 11; i++){
+            for (var i = 1; i < 11; i++) {
                 scoresArr.push(parseInt($("#Q" + i).val().trim()));
             }
             var newSubmission = {
@@ -179,40 +193,41 @@
             var currFriendsScores = [];
             var currFriendsNames = [];
             var currFriendsImages = [];
-            
-            $.get("/api/friends", function(data){
-                for(var i = 0; i<data.length; i++){
+
+            $.get("/api/friends", function (data) {
+                for (var i = 0; i < data.length; i++) {
                     currFriendsScores.push(data[i].scores);
                     currFriendsNames.push(data[i].name);
                     currFriendsImages.push(data[i].image);
                 }
             })
-            
-            
-            $.post("/api/friends",newSubmission,function(data){
-                var diffArray = []; 
-                for(var i = 0; i < currFriendsScores.length; i++){
+
+
+            $.post("/api/friends", newSubmission, function (data) {
+                var diffArray = [];
+                for (var i = 0; i < currFriendsScores.length; i++) {
                     var diff = 0;
-                    for(var k = 0; k < currFriendsScores[i].length; k++){
+                    for (var k = 0; k < currFriendsScores[i].length; k++) {
                         diff += Math.abs(currFriendsScores[i][k] - data.scores[k]);
                     }
                     diffArray.push(diff);
                 }
-                
+
                 var smallestDifferenceIn = diffArray.indexOf(Math.min(...diffArray));
                 var match = currFriendsNames[smallestDifferenceIn];
                 var image = currFriendsImages[smallestDifferenceIn];
-                
+
                 $("#myModal").modal("toggle");
                 $("#modalTxt").text("Your Match is: " + match);
                 $("#imageId").attr("src", image);
             });
-            
+
             $("#nameinputId").val("");
-            for(var i = 1; i<11; i++){
+            for (var i = 1; i < 11; i++) {
                 $("#Q" + i).val("");
             }
         })
     </script>
 </body>
+
 </html>
