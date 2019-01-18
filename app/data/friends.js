@@ -15,7 +15,7 @@ module.exports = [
       image: "https://m.media-amazon.com/images/M/MV5BMjEyMzQyNzA0M15BMl5BanBnXkFtZTYwODc3MTA1._V1_UX214_CR0,0,214,317_AL_.jpg"
   },
   {
-      name: "Rob Gronkowski",
+      name: "Rob Gronk",
       scores: [4, 3, 4, 1, 4, 5, 2, 1, 2, 3],
       image: "https://m.media-amazon.com/images/M/MV5BNTc2NDA2NTYyOF5BMl5BanBnXkFtZTcwMzU5OTg5Nw@@._V1_.jpg"
   }
