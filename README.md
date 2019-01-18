@@ -3,7 +3,9 @@ A compatibility-based "FriendFinder" application -- basically a dating app for s
 
 ### Resources Used
 * HTML
-* Bootstarp
+* Bootstrap
 * JavaScript
 * Node
 * Express
+
+#### 
