@@ -7,9 +7,9 @@ A compatibility-based "FriendFinder" application -- basically a dating app for s
 * JavaScript
 * Node
 * Express
+* Heroku
+* NPM Package
 
-#### Resources Used
-
+### Resources Used
 * App functionality concerning routes via AJAX were imported from StarWarsApp activity from Week 13.
-
 * StarWarsApp and HotRestaurant activities from Week 13 were also used as templates for Express middleware.
