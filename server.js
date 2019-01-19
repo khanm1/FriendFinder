@@ -1,4 +1,4 @@
-//set up dependencie
+//Dependencie
 var path = require("path");
 var bodyParser = require("body-parser");
 var express = require("express");

@@ -199,7 +199,7 @@
             var currFriendsNames = [];
             var currFriendsImages = [];
 
-            // API GET Requests function
+            // API GET Requests 
             $.get("/api/friends", function (data) {
                 for (var i = 0; i < data.length; i++) {
                     currFriendsScores.push(data[i].scores);
@@ -208,7 +208,7 @@
                 }
             })
 
-            // API POST Requests function
+            // API POST Requests 
             $.post("/api/friends", newSubmission, function (data) {
                 var diffArray = [];
                 for (var i = 0; i < currFriendsScores.length; i++) {
