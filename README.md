@@ -13,3 +13,4 @@ A compatibility-based "FriendFinder" application -- basically a dating app for s
 ### Resources Used
 * App functionality concerning routes via AJAX were imported from StarWarsApp activity from Week 13.
 * StarWarsApp and HotRestaurant activities from Week 13 were also used as templates for Express middleware.
+* Also collect some information and ideas from Stack Overflow and other sites.
