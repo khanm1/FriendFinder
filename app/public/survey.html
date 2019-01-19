@@ -14,8 +14,8 @@
     <div class="container">
         <br>
         <div class="jumbotron bg-success text-white text-center">
-            <h1 class="display-4">Survey!</h1>
-            <p class="h6">Answer the questions to find your match!</p>
+            <h1 class="display-4">Take Survey!</h1>
+            <p class="h5">Answer the questions to find your match!</p>
         </div>
         <form>
             <div class="form-group">
@@ -126,7 +126,7 @@
             </div>
             <div class="form-group">
                 <h4>Question: 9</h4>
-                <label for="Q9">Are you a active person?</label>
+                <label for="Q9">Are you an active person?</label>
                 <select class="form-control" id="Q9">
                     <option value="" selected disabled>Please Select</option>
                     <option value="1">1 (Not Really)</option>
@@ -156,6 +156,8 @@
         <!-- Modal -->
         <div class="modal" id="myModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
+
+                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Your Match Has Been Found!</h5>
@@ -177,7 +179,7 @@
         <br>
     </div>
 
-
+<!-- Compiled and minified CSS & JS -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -196,7 +198,7 @@
             var currFriendsScores = [];
             var currFriendsNames = [];
             var currFriendsImages = [];
-           
+
             // API GET Requests function
             $.get("/api/friends", function (data) {
                 for (var i = 0; i < data.length; i++) {
