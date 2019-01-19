@@ -10,7 +10,10 @@ From the FriendFinder website, users will enter:
 * This is a screen shot of the survey page:
 
 
-* And a screen shot of the 'Match!' pop-up window:
+
+* This is a screen shot of the 'Match!' pop-up window:
+
+* This is a screen shot of the API Added New friend:
 
 
 
