@@ -8,13 +8,13 @@ From the FriendFinder website, users will enter:
 * Each question has a assigned value, and all values are aggragated into an overall value. This overall value compared to other overall values from other profiles. Users with similar overall values will then be matched one-to-one. A pop-up window will display the name and profile picture of the match!
 
 * This is a screen shot of the survey page:
-
-
+file:///Users/mohammadkhan/Desktop/survey.png
 
 * This is a screen shot of the 'Match!' pop-up window:
+file:///Users/mohammadkhan/Desktop/match.png
 
 * This is a screen shot of the API Added New friend:
-
+file:///Users/mohammadkhan/Desktop/Added%20new%20friend.png
 
 
 ### Technology Used
