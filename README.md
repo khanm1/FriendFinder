@@ -10,8 +10,6 @@ From the FriendFinder website, users will enter:
 * This is a screen shot of the survey page:
 file:///Users/mohammadkhan/Desktop/survey.png
 
-![alt text](file:///Users/mohammadkhan/Desktop/survey.png)
-
 * This is a screen shot of the 'Match!' pop-up window:
 file:///Users/mohammadkhan/Desktop/match.png
 
